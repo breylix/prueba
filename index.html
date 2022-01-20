@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <table>
+        <tr>
+            <td>Anthony Moronta</td>
+            <td><input type="text" onpaste="return false;"> </td>
+        </tr>
+        <tr>
+            <td>Manuel Perez</td>
+            <td><input type="text" onpaste="return false;"> </td>
+        </tr>
+        <tr>
+            <td>Joan Oviedo</td>
+            <td><input type="text" onpaste="return false;"> </td>
+        </tr>
+    </table>
+    
+</head>
+<body>
+    <script>
+        datos = [
+           {
+              "nombre": "Anthony Moronta",
+              "total": "11,100.12"
+           },
+           {
+            "nombre": "Manuel Perez",
+            "total": "12,100.12"
+           },
+           {
+            "nombre": "Joan Oviedo",
+            "total": "10,100.12"
+           }
+        ]
+        setInterval(() => { 
+            
+            
+            inputs = document.getElementsByTagName("input");
+            for(input of inputs){     
+                //SET INPUTS CAN PASTE VALUE                      
+                input.setAttribute("onpaste", "return true");
+
+                //SET AUTOMATICALLY INPUTS VALUE         
+                                 
+            } 
+
+            
+            
+            
+            
+        }, 1000);
+    </script>
+</body>
+</html>
